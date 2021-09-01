@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/csteams",
+      "handler": "csteams.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/csteams/count",
+      "handler": "csteams.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/csteams/:id",
+      "handler": "csteams.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/csteams",
+      "handler": "csteams.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/csteams/:id",
+      "handler": "csteams.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/csteams/:id",
+      "handler": "csteams.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

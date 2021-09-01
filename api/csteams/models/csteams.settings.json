@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "csteams",
+  "info": {
+    "name": "Csteams",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string",
+      "required": true
+    },
+    "sd": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social"
+    }
+  }
+}
